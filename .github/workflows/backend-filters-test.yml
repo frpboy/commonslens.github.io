@@ -2,9 +2,9 @@ name: Backend Filter Tests
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   pull_request:
-    branches: [main]
+    branches: [master, main]
   schedule:
     # Live-API health check independent of code changes — Commons data or
     # CirrusSearch behavior can drift even when nothing here was touched.
