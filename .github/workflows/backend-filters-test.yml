@@ -27,3 +27,9 @@ jobs:
 
       - name: Run filter/search sweep
         run: flutter test test/backend_filters_test.dart --reporter expanded
+
+      - name: Run CommonsLens core tests
+        working-directory: packages/commonslens_core
+        run: |
+          flutter pub get
+          flutter test --reporter expanded
